@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printnum.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ethanlim <ethanlim@student.42.fr>          +#+  +:+       +#+        */
+/*   By: etlim <etlim@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/05 15:17:39 by etlim             #+#    #+#             */
-/*   Updated: 2023/07/24 13:24:32 by ethanlim         ###   ########.fr       */
+/*   Updated: 2023/07/25 18:02:10 by etlim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,18 +24,18 @@
  */
 
 // for pointer and other unsigned just call this resursion
-void ft_printnum_unsigned(unsigned long long int num, char *hex, int *count)
+void	ft_printnum_unsigned(unsigned long long int num, char *hex, int *count)
 {
-	int len = ft_strlen(hex);
+	int	len = ft_strlen(hex);
+	
 	if (num > 0)
 		ft_printnum(num / len, hex, count);
 	ft_printchar(hex[num % len], count);
 }
 
-
-void ft_printnum(long long int num, char *hex, int *count)
+void	ft_printnum(long long int num, char *hex, int *count)
 {
-	int len = ft_strlen(hex);
+	int	len = ft_strlen(hex);
 	// check if number is positive or negative
 	if (num < 0)
 	{

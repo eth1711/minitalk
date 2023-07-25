@@ -3,20 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ethanlim <ethanlim@student.42.fr>          +#+  +:+       +#+        */
+/*   By: etlim <etlim@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 14:13:03 by etlim             #+#    #+#             */
-/*   Updated: 2023/07/24 13:24:42 by ethanlim         ###   ########.fr       */
+/*   Updated: 2023/07/25 18:02:56 by etlim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int    ft_printf(const char *format, ...)
+int	ft_printf(const char *format, ...)
 {
-	va_list args;
-	int total;
-	int i;
+	va_list	args;
+	int		total;
+	int		i;
 
 	total = 0;
 	i = -1;

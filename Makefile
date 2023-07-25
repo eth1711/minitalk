@@ -9,15 +9,27 @@ CC		= gcc
 CFLAGS	= -Wall -Wextra -Werror
 RM		= rm -f
 
+$(CLIENT) : $(OBJS_CLIENT) $(SERVER)
+		@$(CC) $(CCFLAGS) $(INCS) $(OBJS_CLIENT) -o $@
+
+$(SERVER) : $(OBJS_SERVER)
+		@make -C ./libft
+		@$(CC) $(CCFLAGS) $(INCS) $(OBJS_SERVER) -o $@ 
+
 %.o : %.c
 		@$(CC) $(CCFLAGS) -c -o $@ $<
 
 all : $(CLIENT)
 
 clean : 
-	$(RM) $(OBJS)
+	@make clean -C ./libft
+	@$(RM) *.o
 
 fclean : clean
-	$(RM) $(NAME)
+	@make fclean -C .libft
+	@$(RM) $(CLIENT) $(SERVER)
 
-re : fclean all
+re : fclean 
+		make
+
+.PHONY: all clean fclean re

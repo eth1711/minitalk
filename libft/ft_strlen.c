@@ -3,21 +3,21 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ethanlim <ethanlim@student.42.fr>          +#+  +:+       +#+        */
+/*   By: etlim <etlim@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/04 15:00:26 by etlim             #+#    #+#             */
-/*   Updated: 2023/07/24 13:25:03 by ethanlim         ###   ########.fr       */
+/*   Updated: 2023/07/25 18:01:40 by etlim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_strlen(char *s)
+int	ft_strlen(char *s)
 {
-	int count;
-	
+	int	count;
+
 	count = 0;
-	while(s[count])
+	while (s[count])
 		count++;
-	return(count);
+	return (count);
 }
