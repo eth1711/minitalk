@@ -4,7 +4,7 @@ SRC_CLIENT	= client.c
 SRC_SERVER	= server.c
 OBJS_CLIENT	= $(SRC_CLIENT:.c=.o)
 OBJS_SERVER	= $(SRC_SERVER:.c=.o)
-INCS	= -Ilibft -L./libft -libft
+INCS	= -Ilibft -L./libft -lft
 CC		= gcc
 CFLAGS	= -Wall -Wextra -Werror
 RM		= rm -f
@@ -26,7 +26,7 @@ clean :
 	@$(RM) *.o
 
 fclean : clean
-	@make fclean -C .libft
+	@make fclean -C ./libft
 	@$(RM) $(CLIENT) $(SERVER)
 
 re : fclean 
