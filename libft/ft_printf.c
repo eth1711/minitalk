@@ -6,7 +6,7 @@
 /*   By: etlim <etlim@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 14:13:03 by etlim             #+#    #+#             */
-/*   Updated: 2023/07/25 18:51:43 by etlim            ###   ########.fr       */
+/*   Updated: 2023/07/26 16:08:06 by etlim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,7 +67,6 @@ int	ft_printf(const char *format, ...)
 // 	int mine;
 // 	int original;
 // 	char *str = "banana";
-	
 // 	original = printf("start %d %% end\n", 2147483647);
 // 	mine = ft_printf("start %d %% end\n", 2147483647);
 // 	printf("my count: %i, original count: %i\n", mine, original);
